@@ -1,0 +1,86 @@
+// EXTRA SMALL LAYOUTS
+@media #{$mq-xs} {
+
+	.hamburger {
+		position: relative;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border: none;
+		background: none;
+
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+
+		span {
+			position: absolute;
+			top: 15px;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			@include border-radius(100%);
+			background-color: #000;
+			@include all-transition(.3, linear);
+
+			&:nth-child(1) {
+				left: 0;
+			}
+			&:nth-child(2) {
+				left: 15px;
+				background-color: $primaryColor;
+
+				&:before,
+				&:after {
+					content: 'CLOSE';
+					position: absolute;
+					color: #000;
+					font-size: 7px;
+					opacity: 0;
+					@include all-transition(.3, linear);
+				}
+				&:before {
+					top: 0; left: -30px;
+					@include rotate(-90);
+				}
+				&:after {
+					top: 0; left: 20px;
+					@include rotate(90);
+				}
+			}
+			&:nth-child(3) {
+				left: 30px;
+			}
+		}
+
+		&.active {
+			span {
+				&:nth-child(1),
+				&:nth-child(3)  {
+					left: 15px;
+					opacity: 0;
+				}
+				&:nth-child(2) {
+					background-color: #FFF;
+
+					&:before {
+						top: 20px; left: -30px;
+						@include rotate(-120);
+					}
+					&:after {
+						top: -10px; left: 20px;
+						@include rotate(60);
+					}
+
+					&:before,
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+}

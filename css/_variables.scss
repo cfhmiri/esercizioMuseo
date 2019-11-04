@@ -1,0 +1,20 @@
+$textColor: #000;
+$bgColor: #fff;
+
+$primaryColor: #FF00B3;
+
+//MEDIA QUERIES
+
+$mq-minw-xs: 1px;
+$mq-minw-sm: 768px;
+$mq-minw-md: 992px;
+$mq-minw-lg: 1170px;
+$mq-minw-xlg: 1440px;
+$mq-xs: "only screen and (min-width:" + $mq-minw-xs + ")";
+$mq-sm: "only screen and (min-width:" + $mq-minw-sm + ")";
+$mq-md: "only screen and (min-width:" + $mq-minw-md + ")";
+$mq-lg: "only screen and (min-width:" + $mq-minw-lg + ")";
+$mq-xlg: "only screen and (min-width:" + $mq-minw-xlg + ")";
+
+//FONTS
+$poppins: 'Poppins', sans-serif;

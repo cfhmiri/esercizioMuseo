@@ -1,0 +1,141 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width:1px) {
+  .logo {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width:1px) {
+  .logo {
+    width: 280px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+  }
+}
+@media only screen and (min-width:1px) {
+  .hamburger {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+  }
+  .hamburger:active, .hamburger:focus {
+    outline: none;
+  }
+  .hamburger span {
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #000;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+  .hamburger span:nth-child(1) {
+    left: 0;
+  }
+  .hamburger span:nth-child(2) {
+    left: 15px;
+    background-color: #FF00B3;
+  }
+  .hamburger span:nth-child(2):before, .hamburger span:nth-child(2):after {
+    content: "CLOSE";
+    position: absolute;
+    color: #000;
+    font-size: 7px;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+  .hamburger span:nth-child(2):before {
+    top: 0;
+    left: -30px;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .hamburger span:nth-child(2):after {
+    top: 0;
+    left: 20px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .hamburger span:nth-child(3) {
+    left: 30px;
+  }
+  .hamburger.active span:nth-child(1), .hamburger.active span:nth-child(3) {
+    left: 15px;
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(2) {
+    background-color: #FFF;
+  }
+  .hamburger.active span:nth-child(2):before {
+    top: 20px;
+    left: -30px;
+    -moz-transform: rotate(-120deg);
+    -webkit-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+  }
+  .hamburger.active span:nth-child(2):after {
+    top: -10px;
+    left: 20px;
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+  .hamburger.active span:nth-child(2):before, .hamburger.active span:nth-child(2):after {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width:1px) {
+  header {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

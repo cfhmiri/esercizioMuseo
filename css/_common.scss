@@ -1,0 +1,15 @@
+body {
+    background-color: $bgColor;
+    color: $textColor;
+    font-family: $poppins;
+}
+
+a {
+    color: $textColor;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
